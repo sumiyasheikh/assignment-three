@@ -130,7 +130,7 @@
             <p class="text-[#13131899] text-center w-5/12 mx-auto mt-6">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
             <hr class="bg-[#13131821] border-dashed mt-8 mb-12">
 
-            <div class="flex flex-col lg:flex-row justify-between items-center space-x-8">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-8">
                 <div class="text-center">
                     <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">
                         <p class="text-[#131318] text-2xl font-extrabold">87%</p>
@@ -514,7 +514,7 @@
             <p class="text-[#13131899] text-center w-5/12 mx-auto mt-6">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
             <hr class="bg-[#13131821] border-dashed mt-8 mb-12">
 
-            <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col lg:flex-row justify-between items-center">
                 <div class="space-y-6 p-12 border-[#13131813]">
                     <div class="bg-[#BCED6D19] p-8 rounded-2xl">
                         <img class="mb-6" src="./images/phone.png" alt="">
@@ -535,9 +535,9 @@
                     </div>
                 </div>
     
-                <div>
+                <div class="lg:w-7/12">
                     <form action="">
-                        <div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                             <label class="text-xl font-bold" for="name">Your Name
                                 <p>
                                     <input class="mt-4 rounded-xl bg-[#13131805] text-base font-normal p-5" id="name" type="text" placeholder="Enter your full name">
@@ -545,26 +545,28 @@
                             </label>
                             <label class="text-xl font-bold" for="email">Your Email
                                 <p>
-                                    <input id="email" type="email" placeholder="Enter your email">
+                                    <input class="mt-4 rounded-xl bg-[#13131805] text-base font-normal p-5" id="email" type="email" placeholder="Enter your email">
                                 </p>
                             </label>
                             <label class="text-xl font-bold" for="subject">Subject
                                 <p>
-                                    <input id="subject" type="text" placeholder="Enter your subject">
+                                    <input class="mt-4 rounded-xl bg-[#13131805] text-base font-normal p-5" id="subject" type="text" placeholder="Enter your subject">
                                 </p>
                             </label>
                             <label class="text-xl font-bold" for="phonenumber">Phone Number
                                 <p>
-                                    <input id="phonenumber" type="number" placeholder="Enter your phone number">
+                                    <input class="mt-4 rounded-xl bg-[#13131805] text-base font-normal p-5" id="phonenumber" type="number" placeholder="Enter your phone number">
                                 </p>
                             </label>
-                            <label class="text-xl font-bold" for="message">Message
+                            <label class="text-xl font-bold col-span-1 lg:col-span-2" for="message">Message
                                 <p>
-                                    <input id="message" type="text" placeholder="Write your message">
+                                    <textarea class="mt-4 rounded-xl bg-[#13131805] text-base font-normal p-5" name="" id="message" cols="40" rows="10" placeholder="Write your message"></textarea>
                                 </p>
                             </label>
+                            
+                            <button class="btn bg-[#FF4240] text-white border-none col-span-1 lg:col-span-2">Send Message</button>
                         </div>
-                        <button>Send Message</button>
+                        
                     </form>
                 </div>
             </div>
@@ -574,9 +576,9 @@
 
         <!-- social starts -->
 
-        <section>
-            <h3>Social Media</h3>
-            <div>
+        <section class="mt-12 mb-24 py-9 bg-[#13131805] rounded-xl">
+            <h3 class="text-[#131318] text-2xl font-extrabold text-center">Social Media</h3>
+            <div class="flex justify-center mt-6 gap-6 text-[#131318]">
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-instagram"></i>
@@ -590,56 +592,60 @@
 
     <!-- footer starts -->
 
-    <footer>
-        <div>
-            <h2>Get In Touch</h2>
-            <p>Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
-        
-            <div>
-                <i class="fa-regular fa-envelope"></i>
-                <p>hockeys@support.com</p>
-            </div>
-
-            <div>
-                <i class="fa-solid fa-phone"></i>
-                <p>(+62) 123-321-543</p>
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <h5>Company</h5>
+    <footer class="bg-[#131318] py-24">
+        <div class="container mx-auto">
+            <div class="flex flex-col lg:flex-row gap-40">
+                <div class="lg:w-5/12">
+                    <h2 class="text-3xl font-extrabold text-white">Get In Touch</h2>
+                    <p class="text-[#FFFFFF99] mt-5 mb-6">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            
+                    <div class="flex items-center gap-4 mb-5">
+                        <i class="fa-regular fa-envelope text-[#FF4240]"></i>
+                        <p class="text-[#FFFFFFCC]">hockeys@support.com</p>
+                    </div>
     
-                <ul>
-                    <li>About us</li>
-                    <li>Leadership</li>
-                    <li>Careers</li>
-                    <li>News & Article</li>
-                    <li>Legal Notice</li>
-                </ul>
-            </div>
-    
-            <div>
-                <h5>Support</h5>
-    
-                <ul>
-                    <li>Help Center</li>
-                    <li>FAQ</li>
-                    <li>Ticket Support</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-    
-            <div>
-                <h5>Services</h5>
-    
-                <ul>
-                    <li>Academy</li>
-                    <li>Group Lesson</li>
-                    <li>Private Lesson</li>
-                    <li>Hockeys for kids</li>
-                    <li>Hockeys for Adult</li>
-                </ul>
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid fa-phone text-[#FF4240]"></i>
+                        <p class="text-[#FFFFFFCC]">(+62) 123-321-543</p>
+                    </div>
+                </div>
+            
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-40">
+                    <div>
+                        <h5 class="text-white mb-7">Company</h5>
+            
+                        <ul class="text-[#FFFFFF99]">
+                            <li>About us</li>
+                            <li>Leadership</li>
+                            <li>Careers</li>
+                            <li>News & Article</li>
+                            <li>Legal Notice</li>
+                        </ul>
+                    </div>
+            
+                    <div>
+                        <h5 class="text-white mb-7">Support</h5>
+            
+                        <ul class="text-[#FFFFFF99]">
+                            <li>Help Center</li>
+                            <li>FAQ</li>
+                            <li>Ticket Support</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+            
+                    <div class="col-span-2 lg:col-span-1">
+                        <h5 class="text-white mb-7">Services</h5>
+            
+                        <ul class="text-[#FFFFFF99]">
+                            <li>Academy</li>
+                            <li>Group Lesson</li>
+                            <li>Private Lesson</li>
+                            <li>Hockeys for kids</li>
+                            <li>Hockeys for Adult</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
